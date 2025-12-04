@@ -18,7 +18,7 @@ current_price = 370_000_000
 # --- 중개수수료율 ---
 def get_brokerage_rate(price):
     """부동산 거래 중개수수료 계산 (5억 미만: 0.4%, 5억 이상: 0.3%)"""
-    if price < 500_000_000:
+    if price < 400_000_000:
         return 0.4
     else:
         return 0.3
